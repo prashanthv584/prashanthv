@@ -1,0 +1,113 @@
+cd /u01/app/oracle/product/fmw/iam/server/plugin_utility
+source /home/oracle/oimenv.sh
+ant -f pluginregistration.xml register --for registering
+ant -f pluginregistration.xml unregister --for unregistering
+
+cd /u01/app/oracle/product/fmw/iam/server/bin
+source /home/oracle/oimenv.sh
+
+after every register or unregister, purgecache
+Directory structure for a ZIP file is...
+
+source /scratch/oracle/oimenv.sh
+
+t3://slc06ceg.us.oracle.com:14000
+t3://uidmx0110.us.oracle.com:14000
+t3://aidmx0121.us.oracle.com:14000
+
+idmit.plugins.scheduledtasks.idcsgroupsload.IDMITIDCSGroupsLoad
+idmit.plugins.scheduledtasks.idcsgroupsload.IDMITIDCSGroupsLoad
+/u01/app/oracle/product/fmw/iam111130/server/plugin_utility/pluginregistration.xml
+
+/u01/app/oracle/product/fmw/iam111130/server/plugin_utility/
+
+/u01/app/oracle/product/fmw/iam/server/JavaTasks/primavera-unifier-oim-connector.jar
+/u02/software/upload/IDMITEntityGrantAging.zip
+/u02/software/plugins/IDMITProvisionCustomRoleAccess.zip
+/u02/software/plugins/IDMITRevokeCustomRoleAccess.zip
+
+/u02/software/plugins/IDMITRevokeOrgSpecificEntitlementsSchTask.zip
+
+3nvProd1#
+
+/u02/software/upload/IDSLRegistration.jar
+
+IDMITAQLNNotification.jar
+
+/u02/software/upload/REFOIMConnector/JavaTasks/primavera-unifier-oim-connector.jar
+/u02/software/upload/REFOIMConnector/ThirdParty/activation-1.1.jar
+/u02/software/upload/REFOIMConnector/ThirdParty/axis1.4.jar
+/u02/software/upload/REFOIMConnector/ThirdParty/commons-discovery-0.2.jar
+/u02/software/upload/REFOIMConnector/ThirdParty/commons-lang-2.3.jar
+/u02/software/upload/REFOIMConnector/ThirdParty/commons-logging-1.1.1.jar
+/u02/software/upload/REFOIMConnector/ThirdParty/jaxrpc.jar
+/u02/software/upload/REFOIMConnector/ThirdParty/jdom-1.0.jar
+/u02/software/upload/REFOIMConnector/ThirdParty/log4j-1.2.13.jar
+/u02/software/upload/REFOIMConnector/ThirdParty/mail-1.4.jar
+/u02/software/upload/REFOIMConnector/ThirdParty/orawsdl.jar
+/u02/software/upload/REFOIMConnector/ThirdParty/saaj.jar
+
+idmit.request.plugin.validation.saml.IDMITSAMLReqDataValidationHandler
+
+
+
+cd /u02/software/IDMITDevSupport/
+source setIDMITEnv.sh
+java IDMITDevSupport
+
+idmit.plugins.scheduledtasks.hrsync.IDMITRehireHRSync
+idmit.plugins.scheduledtasks.IDMITSSOPasswordAgingSchTask
+idmit.plugins.eventhandler.postprocess.IDMITUpdateUserDetailsOnDisable
+
+idmit.plugins.eventhandler.postprocess.IDMITUpdateUserDetailsOnDisable
+idmit.plugins.eventhandler.postprocess.IDMITUpdateUserDetailsOnEnable
+
+cd /u01/app/oracle/product/fmw/iam/server/bin
+source /home/oracle/oimenv.sh
+
+
+xelsysadm
+3nvTest#
+3nvStage#
+
+t3://uidmx0110.us.oracle.com:14000
+
+/u02/software/upload/IDSLRegistration.jar
+/u02/software/plugins/IDMITSAMLReqDataValidationHandler.zip
+
+/u02/software/plugins/IDMITCertificationWarningNotification.zip
+
+/u02/software/plugins/IDMITUpdateUserDetailsPostUserDisable.zip
+/u02/software/plugins/IDMITUpdateUserDetailsPostUserEnable.zip
+
+Jar
+
+/u01/app/oracle/product/fmw/iam/server/bin
+
+--export JAVA_HOME=/u01/app/oracle/product/jdk1.8.0_131/
+export PATH=$JAVA_HOME/bin:$PATH
+
+export OIM_ORACLE_HOME=/u01/app/oracle/product/mwhome/idm
+export ORACLE_HOME=/u01/app/oracle/product/mwhome/idm
+export MW_HOME=/u01/app/oracle/product/mwhome
+export WL_HOME=/u01/app/oracle/product/mwhome/wlserver
+export DOMAIN_HOME=/u01/app/oracle/product/config_storage_fmw/domains/OIMDomain
+export ANT_HOME=/u01/app/oracle/product/mwhome/oracle_common/modules/thirdparty/org.apache.ant/1.9.8.0.0/apache-ant-1.9.8
+export PATH=$JAVA_HOME/bin:$ANT_HOME/bin:/u01/app/oracle/product/mwhome/OPatch:$PATH
+export JAVA_HOME=/u01/app/oracle/product/jdk1.8.0_131
+Server Bin: /u01/app/oracle/product/mwhome/idm/server/bin
+Design console: /u01/app/oracle/product/mwhome/idm/designconsole
+
+
+
+
+export OIM_ORACLE_HOME=/u01/app/oracle/product/mwhome/idm
+        export ORACLE_HOME=/u01/app/oracle/product/mwhome/idm
+        export MW_HOME=/u01/app/oracle/product/mwhome
+        export WL_HOME=/u01/app/oracle/product/mwhome/wlserver
+        export         DOMAIN_HOME=/u01/app/oracle/product/config_storage_fmw/domains/OIMDomain
+        export JAVA_HOME=/u01/app/oracle/product/jdk1.8.0_131
+        export ANT_HOME=/u01/app/oracle/product/mwhome/oracle_common/modules/thirdparty/org.apache.ant/1.9.8.0.0/apache-ant-1.9.8
+        export PATH=$JAVA_HOME/bin:$ANT_HOME/bin:/u01/app/oracle/product/mwhome/OPatch:$PATH
+             Server Bin: /u01/app/oracle/product/mwhome/idm/server/bin
+             Design console: /u01/app/oracle/product/mwhome/idm/designconsole

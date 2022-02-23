@@ -1,0 +1,57 @@
+12.2.1.3.0
+11.1.2.3.0
+-------------------------------------------------------
+Export the following objects by searching with their respective full names (fn) or short names (sn) as mentioned below
+
+Process ( fn ) [Includes ITResource - See below one]
+Approval policies
+Resource ( Approval policies Done? fn like EBS ValueChainPlanning )
+Scheduled Tasks ( sn like EBVP )
+Lookups  (sn)
+Task adapter ( sn), Pre-Populate Adapters
+IT resource ( fn )
+Email Definition (sn)( if reset password for app is present)
+Data object Definition ( sn )
+Entity Adapter ( sn )
+
+
+********
+Make sure to remove the Application Instance from confirmation screen which gets added when adding the IT resource
+********
+-------------------------------------------------------
+
+*iProjects-PMW-BASE*
+*PMWB*
+
+*HSZ AD*
+*HSZ*
+
+*Enterprise Systems Account*
+*ESA*
+
+*Win Unif Dmn Admin*
+*ORAD*
+
+*OCSA*
+
+*AD For AUC*
+*ADUC*	
+
+*iProjects-PMW-BASE*
+*PMWB*
+
+*CPQ for Cloud*
+*CPQC*
+
+*Customer Lifecycle Manager*
+*CLMA*
+
+*Oracle Managed Cloud Servers*
+*OMCS*
+
+*Enterprise Systems Account*
+*ESA*
+
+"Federal network device account"  and description "Access to Federal network devices in hosted environments"
+Federal Network Device Account
+FNDA

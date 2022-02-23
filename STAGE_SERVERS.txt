@@ -1,0 +1,140 @@
+848172	TESTRC.TESTAHEBBZ@ORACLE.COM
+848171	TESTRC.TESTAHEBBR@ORACLE.COM
+848156	TESTRC.TESTAHEBBG@ORACLE.COM
+
+
+
+pvudutha_Blackout-Dec 6 2018 10:12:27 AM
+
+https://emcc.us.oracle.com/
+
+SAML Stage
+Basic Y29ycHNhbWxhZG1pbjpMMGgxdGhhazho
+corpsamladmin
+
+adc6160713.us.oracle.com:10
+------TO KNOW COMPLETE DETAILS OF A SERVER------------
+nslookup <SERVERNAME>  . 
+For ex:  nslookup slc06ceg.us.oracle.com
+10.240.227.66
+
+[^[:alnum:][:space:]_.@#-'-]+
+
+/u03/oim-production-shared-files/custom-logs/hrsync_logs
+
+/u01/app/oracle/product/mwhome/idm/server/apps
+
+-----------------------------LOGS
+/u01/app/oracle/product/config_storage_fmw/domains/OIMDomain/config/fmwconfig/servers/oim_server1/logging.xml
+/u01/app/oracle/product/config_storage_fmw/domains/OIMDomain/config/fmwconfig/servers/oim_server2/logging.xml
+
+tail -f /u01/app/oracle/product/config_storage_fmw/domains/OIMDomain/servers/oim_server1/logs/oim_server1.out
+tail -f /u01/app/oracle/product/config_storage_fmw/domains/OIMDomain/servers/oim_server2/logs/oim_server2.out
+
+
+tail -f /u01/app/oracle/product/config_storage_fmw/domains/OIMDomain/servers/soa_server1/logs/soa_server1.out
+tail -f /u01/app/oracle/product/config_storage_fmw/domains/OIMDomain/servers/soa_server2/logs/soa_server2.out
+
+
+rm -rf tmp
+rm -rf cache
+
+cp -f /u01/app/oracle/product/fmw/iam/server/apps/oracle.iam.ui.custom-dev-starter-pack.war /u02/software/UI-war/oracle.iam.ui.custom-dev-starter-pack.war_01SEP18
+
+cp -f /u02/software/UI-war/oracle.iam.ui.custom-dev-starter-pack.war /u01/app/oracle/product/fmw/iam/server/apps/oracle.iam.ui.custom-dev-starter-pack.war
+
+zip logzip2day.zip oim_server1.out0043*
+jar -cf myidcsgroupsui2.war idcsgroupsui.war
+jar -tf myidcsgroupsui.war
+jar -xf myidcsgroupsui.war
+
+
+grep -i -n 'IDCS-IMCMCSPRD02EMEA-SSO' oim_server1.out00207
+
+zgrep -i -n 'alina.negreanu@oracle.com' oim_server1.out.gz
+zgrep -i -n 'AYSINGHA' oim_server2.out.gz
+
+grep -n 'Application Entity Key null' oim_server1.out002*
+grep -n 'Executing processGroups() method' oim_server*.out
+
+grep -n 'MARISSA.SUAREZ@ORACLE.COM' ScheduledTasks.PasswordAgingSchTask-diagno*.out
+grep -n 'alina.negreanu@oracle.com' oim_server1.log.gz
+
+/u02/Logs_Backup/Logs_2018_09_07
+zgrep -i -n 'name=ANJALI.J.JAIN@ORACLE.COM' oim_server1.out.gz
+gunzip oim_server1_pv.out.gz
+
+22356466:<Sep 5, 2016 6:01:15 AM UTC>
+22465153:<Sep 5, 2016 7:01:25 AM UTC>
+
+grep -Fxv -f file1.txt file2.txt > output.txt
+comm -23 <(sort file1.txt) <(sort file2.txt) > output.txt
+
+grep -n 'Failed to Place the Request for Entitlement user with user key = 401750  name = OPC_SAAS_ADVSEC_SUPPORT_ELEVATED
+' oim_server1.out
+O1m@dmin
+sed "/$a/,/$b/!d" input_file > new_file
+sed 7496618,7497422'!d' oim_server1.out.gz > mylog.out
+sed 1101308,1101575'!d' nohup.out > mylog.out
+
+7497322
+
+------------------FIND JAR
+find /u01/ -name jps-api.jar
+
+
+---------------------STAGE OIM SERVERS-----------
+uidmx0110.us.oracle.com
+uidmx0120.us.oracle.com
+
+-------------------------------TEST OIM SERVERS--------
+slc06ceg.us.oracle.com
+-------------------------------PROD OIM SERVERS-----------------------
+aidmx0121.us.oracle.com
+aidmx0122.us.oracle.com
+
+
+select * from oimhome_jars where oj_name='ORNAUtil.jar';
+
+
+ [oracle@aidmx0122 logs]$ mkdir diag-logs-9thoct2014
+[oracle@aidmx0122 logs]$ cp oim_server2*diag* diag-logs-9thoct2014
+[oracle@aidmx0122 logs]$ pwd
+/u01/app/oracle/product/config_storage_fmw/domains/OIMDomain/servers/oim_server2/logs
+[oracle@aidmx0122 logs]$
+
+
+[oracle@aidmx0121 logs]$ mkdir diag-logs-9thoct2014
+[oracle@aidmx0121 logs]$ cp oim_server1*diag* diag-logs-9thoct2014
+[oracle@aidmx0121 logs]$ pwd
+/u01/app/oracle/product/config_storage_fmw/domains/OIMDomain/servers/oim_server1/logs
+[oracle@aidmx0121 logs]$
+
+tail -f oim_server1.out oim_server1-diagnostic.log
+
+
+cat /home/oracle/oimenv.sh
+
+
+/u01/app/oracle/product/mwhome/idm/server/idmit-custom/idcsgroupsui.war/WEB-INF
+Domain Home: /scratch/app/oracle/product/fmw/user_projects/domains/base_domain
+WLS Home: /scratch/app/oracle/product/fmw/wlserver_10.3
+Log Location: /scratch/app/oracle/product/fmw/user_projects/domains/base_domain/servers/ManagedServer1/logs
+
+/u01/app/oracle/product/fmw/iam/server/idmit-custom/idcsgroupsui.war
+
+/u01/app/oracle/product/mwhome/idm/server/idmit-custom
+
+223589
+/u01/app/oracle/product/cloudCustomBinaryHome/deployments/jobs/exportReportDataToTempTableJob.sh
+
+
+
+
+<Oct 30, 2018 6:54:07 AM UTC> <Error> <ORACLE.IAM.CONNECTORS.ICFCOMMON.PROV.ICPROVISIONINGMANAGER> <BEA-000000> <oracle.iam.connectors.icfcommon.prov.ICProvisioningManager : doUpdate : Error while updating user
+org.identityconnectors.framework.common.exceptions.ConnectorException: HTTP 400 Error : Not able to parse input, or input does not match required entities or validation failures.{"schemas":["urn:ietf:params:scim:api:messages:2.0:Error","urn:ietf:params:scim:api:oracle:idcs:extension:messages:Error"],"detail":"The password does not meet the criteria of the password policy because: [Cannot repeat the Current Password]","status":"400","urn:ietf:params:scim:api:oracle:idcs:extension:messages:Error":{"messageId":"error.identity.passwordmgmt.pwdpolicyViolation"}}
+        at org.identityconnectors.restcommon.utils.RESTCommonUtils.checkStatus(RESTCommonUtils.java:188)
+        at org.identityconnectors.restcommon.ClientHandler.executeRequest(ClientHandler.java:252)
+		
+		
+		

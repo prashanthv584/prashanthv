@@ -1,0 +1,96 @@
+=IF(EXACT(A2,"MANAGER"),(B1+1),(B1))
+
+B1 will be 0
+
+Insert into ent_new_load (ID,APP_INSTANCE_NAME,LOOKUP_NAME,ENT_CODE,ENT_DISPLAY_NAME,ENT_DESCRIPTION,TYPE,PREFIX_IT_RESOURCE,CREATION_DATE,SUPPORT_NOTES,
+STATUS,COMMENTS,PROCESSED_DATE,ENTITY_KEY,CATALOG_UDF_ATTRIBUTE) values 
+(ent_new_load_seq.nextval,'CustomRoleAccess','Lookup.Oracle.Privileges.CROL',
+'Custom Devops Role One',
+'Custom Devops Role One',
+'Custom Role Access',
+'ENTITLEMENT',0,sysdate,
+'SR#TEST',
+null,null,null,null,'UDF_SUPPORTNOTES->SR#TEST');
+
+
+Insert into ent_approvers
+(ENT_APPROVER_ID,APP_INSTANCE_NAME,LOOKUP_NAME,ENT_CODE,APPROVER_TYPE,APPROVAL_LEVEL,APPROVER_MAIL,CREATION_DATE,SUPPORT_NOTES) values
+(APSOIM.ENT_APPROVERS_SEQ.NEXTVAL,'CustomRoleAccess','Lookup.Oracle.Privileges.CROL','Custom Devops Role One','AUTO_APPROVE','1',null,sysdate,'SR#TEST');
+
+
+Insert into ent_approvers
+(ENT_APPROVER_ID,APP_INSTANCE_NAME,LOOKUP_NAME,ENT_CODE,APPROVER_TYPE,APPROVAL_LEVEL,APPROVER_MAIL,CREATION_DATE,SUPPORT_NOTES) values
+(APSOIM.ENT_APPROVERS_SEQ.NEXTVAL,'CustomRoleAccess','Lookup.Oracle.Privileges.CROL','Custom Devops Role One','EMPLOYEE','2','',sysdate,'SR#TEST');
+
+
+(1:23:05 AM) prashanth.vuduthala: 105929CONCATENATE("insert into aps.aps_account_privileges (PRIVILEGE_UID, ACCOUNT_UID, PRIVILEGE_TYPE, PRIVILEGE_TYPE_CODE, NAME, ACTIVE, CREATION_DATE, CREATED_BY,LAST_UPDATE_DATE, LAST_UPDATED_BY, SYSTEM_DEFINED, REGION_CODE, COUNTRY_CODE, SOURCE_APPLICATION, SOURCE_APPLICATION_ID, SOURCE_HOST,SOURCE_DATABASE_SID, SOURCE_PRIVILEGE, SOURCE_PRIVILEGE_ID, DEFAULT_FOR_NEW, DEFAULT_FOR_CONTRACTOR, APPROVAL_REQUIRED, USER_REQUESTABLE, SUPPORT_GROUP, BUSINESS_GROUP, ATTRIBUTE1, ATTRIBUTE2, ATTRIBUTE3, ATTRIBUTE4, ATTRIBUTE5, SOURCE_RECORD_ID, OWNER_UID, ATTRIBUTE6, ATTRIBUTE7, ATTRIBUTE8, ATTRIBUTE9, ATTRIBUTE10)values(APPS.aps_account_privileges_S.NEXTVAL,62322,'PRIVILEGE_TYPE','RESPONSIBILITY','";A1;"','Y',sysdate,489320,sysdate,489320,'N','GLOBAL','WW',null,null,null,'";A1;"','";B1;"',null,'N','N','Y','Y',null,'WW',null,null,null,'SR#497386-876543351',null,null,null,null,null,null,null,null);")
+
+CONCATENATE("Insert into ent_new_load (ID,APP_INSTANCE_NAME,LOOKUP_NAME,ENT_CODE,ENT_DISPLAY_NAME,ENT_DESCRIPTION,TYPE,PREFIX_IT_RESOURCE,CREATION_DATE,SUPPORT_NOTES,STATUS,COMMENTS,PROCESSED_DATE,ENTITY_KEY,CATALOG_UDF_ATTRIBUTE) values(ent_new_load_seq.nextval,'AcquiredLegacyApplications','Lookup.AQLA.Privileges','";A1;"','";A1;"','Acquired Legacy Applications','ENTITLEMENT',0,sysdate,'SR#',null,null,null,null,null);")
+
+ChangeManagementJIRAProduction - Change Management – OCNA Production (JIRA)  - Lookup.SSH.Privileges.ORJP
+Change Management - OCCN Production (JIRA)	ChangeManagementOCCNProductionJIRA - Lookup.SSH.Privileges.ORNA
+
+AppPrivilegeProvExternalProduction
+Lookup.OID.Group.ICF.APP
+Lookup.SSH.Privileges.ORNA
+Lookup.SSH.Privileges.ORJP
+Lookup.OID.Group.ICF.FUFN
+
+update catalog set udf_app_parent_application=1888 where entity_description LIKE 'Fusion FINAB';
+select * from app_instance where app_instance_name like '%OPAM%';
+
+Insert into ent_approvers
+(ENT_APPROVER_ID,APP_INSTANCE_NAME,LOOKUP_NAME,ENT_CODE,APPROVER_TYPE,APPROVAL_LEVEL,APPROVER_MAIL,CREATION_DATE,SUPPORT_NOTES) values
+(APSOIM.ENT_APPROVERS_SEQ.NEXTVAL,'CustomerProgramsWorkbench','Lookup.DBUM.Oracle.Privileges.CPWB','OCPWB - Reference Analytics - Business User','MGR','1',null,sysdate,'SR#160719-000047');
+
+
+Insert into ent_approvers
+(ENT_APPROVER_ID,APP_INSTANCE_NAME,LOOKUP_NAME,ENT_CODE,APPROVER_TYPE,APPROVAL_LEVEL,APPROVER_MAIL,CREATION_DATE,SUPPORT_NOTES) values
+(APSOIM.ENT_APPROVERS_SEQ.NEXTVAL,'CustomerProgramsWorkbench','Lookup.DBUM.Oracle.Privileges.CPWB','OCPWB - Reference Analytics - Business User','EMPLOYEE','2','GEORGIANA.COZOS@ORACLE.COM',sysdate,'SR#160719-000047');
+
+Lookup.DBUM.Oracle.Privileges.AEHR
+
+IDMITProvAccountAutoApproval
+----------
+to_date('31-JAN-2014','DD-Mon-yyyy')
+
+LKV_NEW_LOAD
+ENT_NEW_LOAD
+select * from lku where lku_meaning like '%AQLA%'
+
+-----------
+select * from svr where svr_key =1465;
+
+select * from ent_list where ent_display_name='Confluence Administrator'; --and svr_key =1465;
+
+select * from lkv where lkv_key =81946;
+
+select * from lku where lku_key=5414;
+----------------------------
+
+
+-----------
+select * from ent_new_load;
+select * from ent_processed order by  creation_date desc;
+update catalog set user_defined_tags='Change Management – OCNA Production (JIRA)' where entity_display_name ='Confluence Guest' and catalog_id=74727;
+update ent_new_load set ent_description ='GSCO (Stage)' where ent_display_name ='GSCO Publisher' and id =67765;
+
+
+select * from lku where lku_type_string_key ='Lookup.OID.Group.ICF.APP';
+
+select * from lkv where lku_key =4595 order by lkv_create desc;
+
+select * from catalog where entity_display_name like '%Insight%';
+ike '%PDIT OPAM Security Groups%';
+select * from catalog where entity_description ='PDIT OPAM'; 
+select * from catalog where entity_display_name like '%Security Groups';
+
+update catalog set udf_app_parent_application=2429, user_defined_tags = user_defined_tags||'Community' where entity_description LIKE 'Community' 
+and entity_type not like 'ApplicationInstance' and udf_app_parent_application is null;
+
+
+Key-->Admin ID
+Value-->apps_read
+Key-->Admin Password
+Value-->Sjilthab8
+
